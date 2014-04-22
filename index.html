@@ -4,10 +4,49 @@
 		<title>LibreSSL</title>
 		<style type="text/css">
 			body, html {
-				font-family:"Comic Sans MS", cursive, sans-serif; 
+				font-family:"Comic Sans MS", cursive, sans-serif;
 				margin: 0;
 				padding: 0;
 				background: #ffffff;
+			}
+			.libre-ssl>hgroup:after, .libre-ssl>section:after {
+				content: '';
+				height: 0px;
+				border: 1px inset ThreeDFace;
+				display: block;
+			}
+			.libre-ssl>section:last-of-type:after {
+				border: none;
+			}
+			.libre-ssl>hgroup>header>h1 {
+				text-align: center;
+			}
+			blink {
+				animation:blink 1s;
+				animation-iteration-count: infinite;
+				-webkit-animation:blink 1s;
+				-webkit-animation-iteration-count: infinite;
+			}
+			@keyframes blink {
+				0%{opacity:0.0;}
+				50%{opacity:0.0;}
+				50.01%{opacity:1.0;}
+				100%{opacity:1.0;}
+			}
+			@-webkit-keyframes blink {
+				0%{opacity:0.0;}
+				50%{opacity:0.0;}
+				50.01%{opacity:1.0;}
+				100%{opacity:1.0;}
+			}
+			section.libre-ssl {
+				margin: 1em;
+			}
+			section.we-hate-web-devs {
+				font-size: 0.66em;
+			}
+			ul.indent-list {
+				list-style-type: none;
 			}
 		</style>
 		<meta charset="utf-8" />
@@ -17,45 +56,70 @@
 		<meta name="distribution" content="global" />
 	</head>
 	<body>
-		<center><h1>LibreSSL</h1></center>
-		<hr />
-		<p>LibreSSL is a <b>FREE</b> version of the SSL/TLS protocol forked from <a href="http://www.youtube.com/watch?v=mRCGDUsdRDU">OpenSSL</a></p>
-		<p>
-			At the moment we are <a href="http://freshbsd.org/search?project=openbsd&amp;q=file.name:libssl">too busy deleting and rewriting code</a> to make a decent web page. No we don't want help making web pages, thank you.
-		</p>
-		<p>Check back here soon for updates.</p>
-		<p></p>
-		<hr />
-		<big><b>Resources:</b></big><br />
-		<p>
-			<big><b>For OpenBSD</b></big><br />
-		</p>
-		<p>
-			&nbsp;<a href="http://www.openbsd.org/ftp.html">FTP</a>, &nbsp;<a href="http://www.openbsd.org/anoncvs.html">AnonCVS</a><br />
-			&nbsp;<a href="http://www.openbsd.org/cgi-bin/cvsweb/src/lib/libssl">CVSWeb</a>
-		</p>
-		<p>
-			<big><b>For other OS's</b></big><br />
-		</p>
-		<p>
-			&nbsp;<em><blink>Coming Soon Please Be Patient</blink></em>
-		</p>
-		<p></p>
-		<p>
-			Multi OS support will happen once we have
-		</p>
-		<ul>
-			<li><a href="http://en.wikipedia.org/wiki/Flensing">Flensed</a>, refactored, rewritten, and fixed enough of the code so we have stable baseline that we trust and can be maintained/improved.</li>
-			<li>The right Portability team in place.</li> 
-			<li>A <a href="http://www.openbsdfoundation.org">Stable Commitment of Funding</a> to support an increased development and porting effort. </li>
-		</ul>
-		We know you all want this tomorrow. We are working as fast as we can but our primary focus is good software that we trust to run ourselves. <em>We don't want to break your heart</em>. 
-		<hr />
-		LibreSSL is primarily developed by <a href="http://www.openbsd.org">the OpenBSD Project</a>, and its first inclusion into an operating system will be in <a href="http://www.openbsd.org/56.html">OpenBSD 5.6</a>.
-		<p>
-			LibreSSL is supported financially by <a href="http://www.openbsdfoundation.org/">The OpenBSD Foundation</a> as well as by the <a href="http://www.openbsd.org/donations.html">The OpenBSD Project</a>. Please consider <a href="http://www.openbsdfoundation.org/donations.html">donating</a> to support our efforts.<br />
-		</p>
-		<hr />
-		<font size="1">This page scientifically designed to annoy web hipsters. <a href="http://www.openbsdfoundation.org/donations.html">Donate now</a> to stop the Comic Sans and Blink Tags</font>
+		<section class="libre-ssl">
+			<hgroup>
+				<header>
+					<h1>LibreSSL</h1>
+				</header>
+			</hgroup>
+			<section class="introduction">
+				<p>LibreSSL is a <strong>FREE</strong> version of the SSL/TLS protocol forked from <a href="http://www.youtube.com/watch?v=mRCGDUsdRDU">OpenSSL</a></p>
+				<p>
+					At the moment we are <a href="http://freshbsd.org/search?project=openbsd&amp;q=file.name:libssl">too busy deleting and rewriting code</a> to make a decent web page. No we don't want help making web pages, thank you.
+				</p>
+				<p>Check back here soon for updates.</p>
+			</section>
+			<section class="resources">
+				<hgroup>
+					<header>
+						<h2>Resources:</h2>
+					</header>
+				</hgroup>
+				<section class="open-bsd">
+					<hgroup>
+						<header>
+							<h3>For OpenBSD</h3>
+						</header>
+					</hgroup>
+					<ul class="indent-list">
+						<li><a href="http://www.openbsd.org/ftp.html">FTP</a></li>
+						<li><a href="http://www.openbsd.org/anoncvs.html">AnonCVS</a></li>
+						<li><a href="http://www.openbsd.org/cgi-bin/cvsweb/src/lib/libssl">CVSWeb</a></li>
+					</ul>
+				</section>
+				<section>
+					<hgroup>
+						<header>
+							<h3>For other OS's</h3>
+						</header>
+					</hgroup>
+					<p>
+						<em><blink>Coming Soon Please Be Patient</blink></em>
+					</p>
+					<p>
+						Multi OS support will happen once we have
+					</p>
+					<ul>
+						<li><a href="http://en.wikipedia.org/wiki/Flensing">Flensed</a>, refactored, rewritten, and fixed enough of the code so we have stable baseline that we trust and can be maintained/improved.</li>
+						<li>The right Portability team in place.</li>
+						<li>A <a href="http://www.openbsdfoundation.org">Stable Commitment of Funding</a> to support an increased development and porting effort. </li>
+					</ul>
+					<p>
+						We know you all want this tomorrow. We are working as fast as we can but our primary focus is good software that we trust to run ourselves. <em>We don't want to break your heart</em>.
+					</p>
+				</section>
+			</section>
+			<section class="acknowledgements">
+				<p>
+					LibreSSL is primarily developed by <a href="http://www.openbsd.org">the OpenBSD Project</a>, and its first inclusion into an operating system will be in <a href="http://www.openbsd.org/56.html">OpenBSD 5.6</a>.
+				</p>
+				<p>
+					LibreSSL is supported financially by <a href="http://www.openbsdfoundation.org/">The OpenBSD Foundation</a> as well as by the <a href="http://www.openbsd.org/donations.html">The OpenBSD Project</a>. Please consider <a href="http://www.openbsdfoundation.org/donations.html">donating</a> to support our efforts.<br />
+				</p>
+			</section>
+			<section class="we-hate-web-devs">
+				<p>This page scientifically designed to annoy web hipsters. <a href="http://www.openbsdfoundation.org/donations.html">Donate now</a> to stop the Comic Sans and Blink Tags</p>
+			</section>
+		</section>
 	</body>
 </html>
