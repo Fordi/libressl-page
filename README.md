@@ -2,7 +2,7 @@ libressl-page
 =============
 
 In the spirit of absurd exercises, of forking a thing you don't like and have no control over, and of cleaning
-p code, this is a quick refactor of the new LibreSSL home page that doesn't diminish from its unique flair.
+up code, this is a quick refactor of the new LibreSSL home page that doesn't diminish from its unique flair.
 
 I tried to maintain the spirit of the original, including:
 
