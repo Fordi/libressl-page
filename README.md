@@ -11,3 +11,5 @@ I tried to maintain the spirit of the original, including:
 
 If you feel I've gone too far, please, fork and restore.  Don't expect honors of push requests, though.
 We don't want help making web pages, thank you.
+
+Incidentally, these guys rock so hard it makes me weep inside to know I'll never rock that hard.  There's also the fact that what they're doing could very well be the most important thing with respect to your privacy, ever.  You should [flip 'em a bill](http://www.openbsdfoundation.org/donations.html).  You know.  For science.
